@@ -1,0 +1,10 @@
+<div class="mailcontent">
+<p>Hello Mr. <span>{{mailservice.user.Email | uppercase}} </span></p>
+  <p>From : <strong>{{mailservice.user.Sender}}</strong></p>
+  <p *ngIf="mailservice.user.CC == undefined ||''||null">CC : <strong>{{mailservice.user.CC}}</strong></p>
+  <p>Subject : <strong>{{mailservice.user.Subject}}</strong></p>
+  <p>Body : {{mailservice.user.Body}}</p>
+  <a routerLink="/login" routerLinkActive="active">Logout</a>
+  <a routerLink="/email" routerLinkActive="active">GoBack</a>
+</div>
+

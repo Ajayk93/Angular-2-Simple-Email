@@ -1,0 +1,18 @@
+<div class="container">
+   <div class="row content">
+     <div class="col-md-3 sidenav">
+       <div class="row">
+          <a routerLink="/register" routerLinkActive="active">Registration</a>
+       </div>
+       <div class="row" *ngIf="this.serve.checklogin">
+          <a routerLink="/login" routerLinkActive="active">Login</a>
+        </div>
+     </div>
+     <div class="col-md-9">
+       <!-- <h2>app works</h2>-->
+        <router-outlet></router-outlet>
+     </div>
+   </div>   
+</div>
+
+

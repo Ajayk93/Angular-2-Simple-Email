@@ -1,0 +1,37 @@
+<form class="myform" #formdata="ngForm">
+    <div class="row">
+      <h4>Register with Us</h4>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" name="name" placeholder="Name" [(ngModel)]="user.name">
+          </div>
+          <div class="col">
+            <input type="text" name="age" placeholder="Age" [(ngModel)]="user.age">
+          </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="text" name="phone" placeholder="Phone" [(ngModel)]="user.phone">
+      </div>
+      <div class="col">
+          <input type="text" name="email" placeholder="Email" [(ngModel)]="user.email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="text" name="password" placeholder="Password" [(ngModel)]="user.password">
+      </div>
+      <div class="col">
+        <input type="text" name="dob" placeholder="DOB: YYYY-DD-MM" [(ngModel)]="user.dob">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <input type="text" name="country" placeholder="Country" [(ngModel)]="user.country">
+        </div>
+        <div class="col">
+            <button class="btn btn-default" (click)="onSubmit(formdata)" >Submit</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+
+<form class="loginform" #formdata="ngForm" (ngSubmit)="matchUser(formdata)" *ngIf="flag==0; else showDetail ">
+  <div class="row">
+    <h4>Login to your account</h4>
+  </div>
+  <div class="row">
+    <div class="col">
+      <input type="text" name="email" placeholder="Email" ngModel #email>
+    </div>
+    <div class="col">
+      <input type="text" name="password" placeholder="Password" ngModel>
+    </div>
+    <div class="col">
+      <button class="btn btn-info" type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+<ng-template #showDetail>
+  <router-outlet></router-outlet>
+</ng-template>
+
+
+

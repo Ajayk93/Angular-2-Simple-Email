@@ -1,0 +1,14 @@
+.row.content
+{
+    border: 1px solid black;
+    height : 568px;
+}
+.sidenav{
+    padding: 15px;
+    border: 1px solid black;
+}
+.row{
+    margin-left:0px;
+    font-size: 18px;
+    overflow: hidden;
+}

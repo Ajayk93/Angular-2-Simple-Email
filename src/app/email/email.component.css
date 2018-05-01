@@ -1,0 +1,21 @@
+.userdetail
+{
+    margin-top: 40px;
+    margin-left :0px;
+}
+h4{
+    margin-left : 0px;
+}
+h4 span{
+    color : green;
+}
+.newmail{
+    position : absolute;
+    right : 30px;
+}
+
+.composemail input
+{
+    width:100%;
+    margin-bottom : 10px;
+}
